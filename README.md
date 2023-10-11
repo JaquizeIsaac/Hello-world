@@ -1,2 +1,5 @@
 # hello-world
-Website repo
+
+My first repo from scratch
+
+Completed my first repo file.
