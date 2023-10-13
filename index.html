@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+      <script>
+         function showPrompt() {
+           const userInput = prompt('Please enter your name:', 'John Doe');
+     
+           if (userInput !== null) {
+             alert('Welcome,  ' + userInput);
+           } else {
+             alert('No input provided.');
+           }
+         }
+       </script>
+
        <title>WCoCustoms</title>
        <link rel="stylesheet" href="style.css">
 </head>
