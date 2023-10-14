@@ -45,30 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-function timeOfDay() {
-    let time = prompt('How many custom shoes you have?'); // 5;
-    let message = '';
+var userInput = prompt("How many customs do you own?");
 
-    if (time <= 5) {
-        message = 'Share your customs!';
-    } else if (time <= 4) {
-        message = 'Youre off to a great start on this wonderful journey.';
+if (userInput !== null) {
+    var customsCount = parseInt(userInput);
+
+    if (!isNaN(customsCount)) {
+        alert("You own " + customsCount + " customs.");
     } else {
-        message = "Collect more customs.";
+        alert("Please enter a valid number.");
     }
-
-    return message;
 }
-
-function displayRating() {
-
-    let output = '';
-    let rating = prompt('scale of 1-50, how many shoes is in your collection?');
-    for(let i = 0; i < rating; i++){
-        output += "<img class='Custom VL Jordan 1.s' src='https://images.squarespace-cdn.com/content/v1/6051270aed61351688b8d6a4/1655762860080-OAF4O6R2K0Q8J7QW1BH8/IMG_2954.jpg?format=1500w/>";
-    }
-
-    return document.write(output);
-}
-
-guessANumber();
